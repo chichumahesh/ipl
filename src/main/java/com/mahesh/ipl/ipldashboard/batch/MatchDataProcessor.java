@@ -7,11 +7,10 @@ import org.slf4j.LoggerFactory;
 import org.springframework.batch.item.ItemProcessor;
 
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 
 public class MatchDataProcessor implements ItemProcessor<MatchInput, Match> {
 
-    private static final Logger logget = LoggerFactory.getLogger(MatchDataProcessor.class);
+    private static final Logger log = LoggerFactory.getLogger(MatchDataProcessor.class);
 
     @Override
     public Match process(MatchInput matchInput) throws Exception {
